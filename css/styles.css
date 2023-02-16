@@ -478,6 +478,8 @@ footer .container {
     display: none;
 }
 
+/* Modal window settings */
+
 .is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -495,10 +497,6 @@ footer .container {
     justify-content: center;
     align-items: center;
 }
-
-
-
-/* Modal window settings */
 
 .modal-window {
     width: 408px;
