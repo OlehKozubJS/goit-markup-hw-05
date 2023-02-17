@@ -436,9 +436,7 @@ footer .container {
     background-color: var(--light-backgrounds-clr);
     border: 1px solid var(--accent-and-footer-text-clr);
     color: var(--button-clr);
-    transition: background-color var(--common-animation);
-    transition: box-shadow var(--common-animation);
-    transition: color var(--common-animation);
+    transition: background-color var(--common-animation), box-shadow var(--common-animation), color var(--common-animation);
 }
 
 .filter-button:hover,
@@ -454,6 +452,10 @@ footer .container {
     align-items: center;
     column-gap: 24px;
     row-gap: 48px;
+}
+
+.product-link-content {
+    transition: box-shadow var(--common-animation);
 }
 
 .product-link:hover .product-link-content,
