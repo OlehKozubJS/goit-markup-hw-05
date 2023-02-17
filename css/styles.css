@@ -1,4 +1,4 @@
-/* Color variables */
+/* Color and animation variables */
 
 :root {
     --button-clr: #4D5AE5;
@@ -126,11 +126,13 @@ button {
 .navigation-link {
     font-weight: 500;
     color: var(--headline-clr);
+    transition: color var(--common-animation);
 }
 
 .contact-link {
     color: inherit;
     font-style: normal;
+    transition: color var(--common-animation);
 }
 
 .navigation-link:hover,
@@ -190,6 +192,7 @@ footer .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color var(--common-animation);
 }
 
 .footer-social-media-logo {
@@ -260,6 +263,7 @@ footer .container {
     background: var(--button-clr);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--common-white-color);
+    transition: background-color var(--common-animation);
 }
 
 .order-service-button:hover,
@@ -370,6 +374,7 @@ footer .container {
     height: 40px;
     border-radius: 50%;
     background: var(--button-clr);
+    transition: background-color var(--common-animation);
 }
 
 .hero-social-media-logo {
@@ -391,6 +396,7 @@ footer .container {
     height: 88px;
     border-radius: 4px;
     border: 1px solid var(--customer-logo-color);
+    transition: border var(--common-animation);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -400,6 +406,7 @@ footer .container {
     height: 56px;
     width: 104px;
     fill: var(--customer-logo-color);
+    transition: fill var(--common-animation);
 }
 
 .customer-link:hover .customer-link-content,
@@ -429,6 +436,9 @@ footer .container {
     background-color: var(--light-backgrounds-clr);
     border: 1px solid var(--accent-and-footer-text-clr);
     color: var(--button-clr);
+    transition: background-color var(--common-animation);
+    transition: box-shadow var(--common-animation);
+    transition: color var(--common-animation);
 }
 
 .filter-button:hover,
@@ -557,6 +567,11 @@ footer .container {
     height: 24px;
     border-radius: 50%;
     background: var(--accent-and-footer-text-clr);
+    transition: background-color var(--common-animation);
+}
+
+.modal-window-close-button:hover {
+    background-color: var(--hover-focus-clr);
 }
 
 .modal-window-close-icon {
