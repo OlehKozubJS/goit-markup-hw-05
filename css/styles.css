@@ -10,6 +10,7 @@
     --common-white-color: #FFFFFF;
     --customer-logo-color:#8E8F99;
     --footer-icon-active-color: #31D0AA;
+    --common-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -445,10 +446,6 @@ footer .container {
     row-gap: 48px;
 }
 
-.product-link {
-    line-height: 0;
-}
-
 .product-link:hover .product-link-content,
 .product-link:focus .product-link-content {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -510,8 +507,8 @@ footer .container {
 
 .product-link:hover .product-description {
     top: 0px;
-    /*transform: translate(0px, -300px);*/
 }
+
 
 /* Modal window settings */
 
