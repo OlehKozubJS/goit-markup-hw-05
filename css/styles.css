@@ -73,7 +73,6 @@ button {
 
 .header-section {
     padding-top: 24px;
-    padding-bottom: 24px;
     display: flex;
     border-bottom: 1px solid var(--accent-and-footer-text-clr);
 }
