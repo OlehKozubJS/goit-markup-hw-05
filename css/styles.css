@@ -129,6 +129,28 @@ button {
     transition: color var(--common-animation);
 }
 
+.navigation-link::after {
+    display: block;
+    margin-top: 24px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--common-white-color);
+    transition: background-color var(--common-animation);
+    content: "";
+}
+
+.contact-link {
+    color: inherit;
+    font-style: normal;
+    transition: color var(--common-animation);
+}
+
+.navigation-link:hover::after,
+.navigation-link:focus::after,
+.current-page::after {
+    background-color: var(--hover-focus-clr);
+}
+
 .contact-link {
     color: inherit;
     font-style: normal;
