@@ -478,6 +478,41 @@ footer .container {
     display: none;
 }
 
+
+/* Product description settings */
+
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 360px;
+}
+
+.product-description {
+    position: absolute;
+    top: 300px;
+    transition: top var(--common-animation);
+    left: 0px;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px;
+    background-color: var(--button-clr);
+    opacity: 0.9;
+    background-blend-mode: soft-light;
+    mix-blend-mode: normal;
+}
+
+.product-description-text {
+    color: var(--light-backgrounds-clr);
+}
+
+.product-link:hover .product-description {
+    top: 0px;
+    /*transform: translate(0px, -300px);*/
+}
+
 /* Modal window settings */
 
 .is-hidden {
